@@ -21,4 +21,4 @@ docker-run: docker-image
 	docker run --name $(NAME)_server --rm -it -p $(PORT):3333 $(IMAGE)
 
 docker-test: docker-image
-	docker run --name $(NAME)_test --rm  $(IMAGE) npm test
+	docker run --name $(NAME)_test --rm  $(IMAGE) npm test && npm run-script check-style
