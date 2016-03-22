@@ -1,0 +1,6 @@
+--require src/tests/globals
+--require source-map-support/register
+--ui bdd
+--recursive
+--timeout 15000
+src/tests
