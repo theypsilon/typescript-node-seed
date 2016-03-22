@@ -2,8 +2,8 @@ FROM node:4.4.0
 WORKDIR /app
 ADD package.json /app/package.json
 RUN npm install
-ADD tsd.json /app/tsd.json
+ADD typings.json /app/typings.json
 RUN npm run-script load-declarations
 ADD . /app
 RUN npm run-script compile
-CMD npm test
+CMD npm start

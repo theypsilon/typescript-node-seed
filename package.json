@@ -1,28 +1,28 @@
 {
-    "name": "tsbackend",
-    "version": "0.0.1",
-    "private": true,
-    "scripts": {
-        "load-declarations": "./node_modules/tsd/build/cli.js install",
-        "check-style": "./node_modules/tslint/bin/tslint src/**/*.ts",
-        "compile": "./node_modules/typescript/bin/tsc",
-        "test": "./node_modules/mocha/bin/_mocha",
-        "start": "node src/node_modules/express/server.js"
-    },
-    "dependencies": {
-        "express": "^4.13.3",
-        "body-parser": "^1.14.1",
-        "method-override": "^2.3.5",
-        "errorhandler": "^1.4.2",
-        "source-map-support": "0.4.0"
-    },
-    "devDependencies": {
-        "mocha": "2.4.5",
-        "sinon": "1.15.4",
-        "sinon-chai": "2.8.0",
-        "chai": "3.5.0",
-        "typescript": "1.8.9",
-        "tsd": "0.6.5",
-        "tslint": "3.6.0"
-    }
+  "name": "tsbackend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "load-declarations": "./node_modules/typings/dist/bin.js install",
+    "check-style": "./node_modules/tslint/bin/tslint src/**/*.ts",
+    "compile": "./node_modules/typescript/bin/tsc",
+    "test": "./node_modules/mocha/bin/_mocha",
+    "start": "node src/node_modules/express/server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "body-parser": "^1.14.1",
+    "method-override": "^2.3.5",
+    "errorhandler": "^1.4.2",
+    "source-map-support": "0.4.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5",
+    "sinon": "1.15.4",
+    "sinon-chai": "2.8.0",
+    "tslint": "3.6.0",
+    "typescript": "1.8.9",
+    "typings": "0.7.9"
+  }
 }
