@@ -10,10 +10,11 @@
     "start": "node src/node_modules/express/server.js"
   },
   "dependencies": {
-    "express": "^4.13.3",
     "body-parser": "^1.14.1",
-    "method-override": "^2.3.5",
     "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
+    "sequelize": "^3.21.0",
     "source-map-support": "0.4.0"
   },
   "devDependencies": {

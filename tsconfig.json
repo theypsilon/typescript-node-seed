@@ -4,8 +4,13 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "moduleResolution": "node"
     },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
     "files": [
         "typings/main.d.ts",
         "src/node_modules/express/server.ts"
